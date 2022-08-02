@@ -187,3 +187,21 @@ exec --no-startup-id i3-msg 'workspace 3; exec /snap/bin/firefox https://gmail.g
 exec --no-startup-id i3-msg 'workspace 4; exec /usr/bin/telegram-desktop; workspace 4'
 exec --no-startup-id i3-msg 'workspace 4; exec /snap/bin/firefox  https://web.whatsapp.com/;workspace 4'
 
+## Screenshots
+bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
+bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
+bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(date)"
+
+## Clipboard Screenshots
+bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t image/png
+bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
+
+bindsym Ctrl+$mod+l exec i3lock -c 000000
+bindsym Ctrl+$mod+s  exec --no-startup-id systemctl suspend
+
+set $ws1 "1:Coms"
+set $ws2 "2:web"
+set $ws3 "3:terminal"
+set $ws4 "4:Workspace"
+set $ws5 "5:Personal"
