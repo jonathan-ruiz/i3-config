@@ -4,4 +4,4 @@
 - cbatticon
 - xrandr
 - bluebeman
-- autorandr 
+- redshift 

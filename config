@@ -205,6 +205,10 @@ exec --no-startup-id cbatticon
 # Bluetooth manager
 exec --no-startup-id blueman-applet
 
+# Redshift
+exec --no-startup-id redshift
+
+
 ##  Screenshots in files
 bindsym Print exec --no-startup-id maim --format=png "/home/$USER/Pictures/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-all.png"
 bindsym $mod+Print exec --no-startup-id maim --format=png --window $(xdotool getactivewindow) "/home/$USER/Pictures/screenshot-$(date -u +'%Y%m%d-%H%M%SZ')-current.png"
@@ -218,5 +222,5 @@ bindsym Ctrl+Shift+Print exec --no-startup-id maim --format=png --select | xclip
 # Lock screen
 bindsym $mod+l exec i3lock -c 000000
 
-workspace 1 output eDP-1-1
-workspace 2 output HDMI0
+#workspace 1 output eDP-1-1
+#workspace 2 output HDMI0
