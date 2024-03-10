@@ -1,7 +1,1 @@
-# Dependenccies
-
-- pavucontrol
-- cbatticon
-- xrandr
-- bluebeman
-- redshift 
+Replaced by https://github.com/jonathan-ruiz/dotconfig
